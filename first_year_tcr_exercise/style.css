@@ -2,19 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 html {
   font-size: 62.5%;
 }
 body {
   font-family: "Goldman", cursive;
+  background-color: black;
+}
+
+body p{
+  color: white;
+  font-size: 20px;
 }
 
 nav {
   display: flex;
   width: 100%;
-  padding: 2rem;
-  min-height: 10vh;
+  min-height: 100%;
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
@@ -35,5 +41,46 @@ nav a {
   text-decoration: none;
 }
 nav img {
-  width: 5vw;
+  width: 10vw;
+  height: 19vh;
+  padding: 20px;
+}
+
+.title1 {
+  font-size: 50px;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+.title2 {
+  font-size: 50px;
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  background: #00a8c7;
+  justify-content: space-between;
+  left: 50%;
+}
+
+.footer-text {
+  font-size: 20px;
+  padding-left: 540px;
+}
+
+h2{
+  color: white;
+  font-size: 25px;
 }
