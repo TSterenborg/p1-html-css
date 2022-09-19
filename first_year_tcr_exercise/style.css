@@ -15,17 +15,20 @@ body {
 body p{
   color: white;
   font-size: 20px;
+  width: 30%;
 }
 
 nav {
+  position: fixed;
   display: flex;
   width: 100%;
-  min-height: 100%;
+  min-height: 1%;
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
   background: #00a8c7;
   justify-content: space-between;
+  z-index: 500;
 }
 nav ul {
   display: flex;
@@ -49,7 +52,7 @@ nav img {
 .title1 {
   font-size: 50px;
   position: absolute;
-  top: 130%;
+  top: 110%;
   left: 50%;
   color: white;
   transform: translate(-50%, -50%);
@@ -57,7 +60,7 @@ nav img {
 .title2 {
   font-size: 50px;
   position: absolute;
-  top: 140%;
+  top: 120%;
   left: 50%;
   color: white;
   transform: translate(-50%, -50%);
@@ -83,4 +86,13 @@ nav img {
 h2{
   color: white;
   font-size: 25px;
+  text-align: center;
+}
+
+.txt1 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 65%;
+  padding-top: 5%;
+  width: 155%;
 }

@@ -9,6 +9,7 @@
   <body>
     <h1>Boekingsformulier</h1>
     <form>
+      <div>
       <label for="voornaam">Voornaam</label>
       <input
         type="text"
@@ -17,7 +18,8 @@
         required
         pattern="[A-Za-z]{0,100}"
       />
-      <br />
+    </div>
+    <div>
       <label for="achternaam">Achternaam</label>
       <input
         type="text"
@@ -26,21 +28,34 @@
         required
         pattern="[A-Za-z]{0,100}"
       />
-      <br />
-      <label for="Geslacht">Geslacht</label>
-      <select id="Man" id="Woman" id="Anders">
-        <option value="Man">Man</option>
-        <option value="Woman">Vrouw</option>
-        <option value="Anders">Anders</option>
-      </select>
-      <br />
-      <br />
-      <label for="postcode">Postcode</label>
-      <input type="text" required maxLength="6" pattern="^[1-9][0-9]{3} ?(?!sa|sd|ss|SA|SD|SS)[A-Za-z]{2}$" />
-      <br />
+    </div>
+    <div>
+    <label for="geslacht">Geslacht</label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="other"> Other
+    </div>
+
+      <div>
+        <label for="postcode">Postcode</label>
+        <input
+          type="text"
+          required
+          maxlength="6"
+          pattern="^[1-9][0-9]{3} ?(?!sa|sd|ss|SA|SD|SS)[A-Za-z]{2}$"
+        />
+      </div>
+      <div>
       <label for="stad">Stad</label>
-      <input type="text" required id="stad" name="stad" pattern="[A-Za-z]{0,100}" />
-      <br />
+      <input
+        type="text"
+        required
+        id="stad"
+        name="stad"
+        pattern="[A-Za-z]{0,100}"
+      />
+    </div>
+    <div>
       <label for="land">Land</label>
       <select id="land" required name="Land">
         <option>Kies een land</option>
@@ -297,10 +312,10 @@
         <option value="ZM">Zambia</option>
         <option value="ZW">Zimbabwe</option>
       </select>
-      <br />
+    </div>
+    <div>
       <label for="bsn">BSN-nummer</label>
       <input type="bsn" required id="bsn" name="bsn" pattern="[0-9]{0,9}" />
-      <br />
       <br />
       <label for="vland">Vakantie land</label>
       <select id="vland" name="vland">
@@ -558,28 +573,36 @@
         <option value="ZM">Zambia</option>
         <option value="ZW">Zimbabwe</option>
       </select>
-      <br />
+      </div>
+      <div>
       <label for="date">Datum van vertrek</label>
       <input type="date" required name="date" id="date" min="2022-09-08" />
-      <br />
+      </div>
+      <div>
       <label for="date">Datum van terugkomst</label>
       <input type="date" required name="date" id="date" min="2022-09-08" />
-      <br />
+      </div>
+      <div>
       <label for="apersoon">Aantal Personen</label>
-      <input type="text" required id="apersoon" name="apersoon" pattern="[0-4]{0,1}">
-<br>
-<br>
+      <input
+        type="text"
+        required
+        id="apersoon"
+        name="apersoon"
+        pattern="[0-4]{0,1}"
+      />
+      </div>
+      <div>
       <label for="mail">E-mail</label>
-      <input type="text" required id="mail" name="mail"/>
-<br>
-        <label for="pwd">Wachtwoord:</label>
-        <input type="password" required id="pwd" name="pwd">
+      <input type="text" required id="mail" name="mail" />
+      </div>
+      <div>
+      <label for="pwd">Wachtwoord:</label>
+      <input type="password" required id="pwd" name="pwd" />
+      </div>
 
-      <br />
-      <br />
+      
       <input type="submit" value="Boek nu" />
-
-
     </form>
   </body>
 </html>
