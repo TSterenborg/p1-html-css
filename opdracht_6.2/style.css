@@ -1,0 +1,37 @@
+.flex-container {
+    display: flex;
+    width: 100vw;
+}
+
+body {
+    overflow-x: hidden;
+}
+  
+.box {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+  
+
+  
+#row-rev {
+    flex-direction: row-reverse;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
