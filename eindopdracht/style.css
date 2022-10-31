@@ -123,7 +123,7 @@ body {
     border-bottom: 0.35rem #fff solid;
     width: fit-content;
     margin-left: 2vw;
-    height: 8vh;
+    height: 11vh;
 }
 
 #locations p {
@@ -344,6 +344,7 @@ body {
     #locations h2 {
         font-size: 2.5rem;
         margin-left: 4vw;
+        height: 8vh;
     }
 
     #locations p {
